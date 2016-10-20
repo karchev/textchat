@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>texstChat</title>
+  
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script type="text/javascript" src="https://textchat-karchev.c9users.io/client.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://textchat-karchev.c9users.io/client.css" type="text/css" />
+  
+</head>
+<body>
+  
+  <div class="jumbotron text-center">
+    <h1>TextChat</h1>
+    <p>Test Chat Web - Socket.io On Node.js</p> 
+  </div>
+
+  <div class="container roomlist-wrapper">
+    
+    <div class="userinfo form-group">
+      <label class="control-label" for="nickname_input">Nickname : </label>
+      <input type="test" class="form-control" id="nickname_input" value="guest">
+      <button type="button" class="btn btn-default" id="nickname_change" onclick="nickname_change()">nickname_change</button>
+    </div>
+    
+    <label for="roomlist">Room List</label>
+    <div class="roomlist">
+      
+    </div>
+    
+    <div class="menu form-group">
+      <label for="roomname_input">Create Room Menu : </label>
+      <input class="form-control" type="text" id="roomname_input"/>
+      <button class="btn btn-default" id="create_room" onclick="create_room()">create_room</button>
+    </div>
+    
+  </div>
+  
+  <div class="container chatpage-wrapper row">
+  
+    <div class="sidenav col-xs-3">
+      <label for="userlist">userlist : </label>
+      <div class="userlist list-group">
+      </div>
+    </div>
+    
+    <div class="chatmenu container col-xs-9">
+      <label id="roomtitle" for="commentarea"></label>
+      <textarea readonly id="commentarea" class="form-control" rows="20" id="comment"></textarea>
+      <footer class="footer">
+        <div class="input-group">
+            <input type="text" class="chatinput form-control custom-control" style="resize:none"></input>
+            <span class="chatinputbutton input-group-addon btn btn-primary">Send</span>
+        </div>
+      </footer>
+    </div>
+  
+  </div>
+  
+</body>
+</html>

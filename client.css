@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+}
+
+button {
+    margin-top:1vh;
+}
+
+.form-group{
+    margin-top:2vh;
+}
+
+.roomlist-wrapper{
+    display:block;
+}
+
+.chatpage-wrapper{
+    height: 60vh;
+    width:100%;
+    display: none;
+}
+
+.chatmenu{
+    height:100%;
+}
+
+.sidenav{
+    height:100%;
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+    margin-bottom: 5vh;
+}
