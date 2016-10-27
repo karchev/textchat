@@ -10,4 +10,6 @@
 front : javascript(jquery), bootstrap
 back : node.js, express(framework), socket.io
 
-�ؽ�Ʈ ä�� �� ���ø����̼�. �����δ� cloud9 web ide���� �����ϴ� linux ������ �����߽��ϴ�. socket.io�� ���� API �� room�� ������ ä�ù� ������ �����߽��ϴ�. �ǽð����� ���� ������ ǥ���ϴ� ����, 1:1 ä�� ���� ������Ʈ ����.
+テキストチャットウェブアプリケーション。サーバーはcloud9 web ideで提供するlinuxサーバーを使用しました。 
+socket.ioの内蔵APIのうちroomを使用してチャットルーム機能を実現しました。 
+リアルタイムでユーザリストを表示する機能、1:1のチャット機能のアップデート予定。
